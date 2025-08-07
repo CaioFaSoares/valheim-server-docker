@@ -10,7 +10,7 @@ services:
         is_directory: true # This will tell Coolify to create the directory (this is not available in a normal docker-compose)
       - type: bind
         source: $HOME/valheim-server/opt/valheim
-        target: opt/valheim
+        target: /opt/valheim
         is_directory: true # This will tell Coolify to create the directory (this is not available in a normal docker-compose)
     ports:
       - "2456-2458:2456-2458/udp"
